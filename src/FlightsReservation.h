@@ -17,8 +17,8 @@ using Booking = std::variant<FlightReservation, std::error_code>;
  * @brief Tries to book a flight. But you can just fly at 1300 hours and you can't go to Boston
  * 
  * @param destination Don't expect to go to Boston.
- * @param hours Sorry, we can just boo
- * @return tl::expected<FlightReservation, std::error_code> 
+ * @param hours Sorry, we can just book at 1300 hrs
+ * @return std::variant<FlightReservation, std::error_code> 
  */
 inline Booking book_flight(std::string destination, int hours)
 {
